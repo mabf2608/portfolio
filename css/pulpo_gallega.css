@@ -1,0 +1,100 @@
+/*********************************************************************/
+/*                  Hoja de Estilo de pulpo_gallega.html            */
+/*                  autor: Miguel Ángel Bonilla Fernández            */
+/*                  version:1.0                                      */
+/*                  fecha: Octubre 2023                              */
+/*                  comentario: ejercicio para portfolio             */
+/*********************************************************************/
+
+/*1.- Fuentes seleecionadas*/
+@font-face {
+    font-family: titulos;
+    src: url(../fonts/Lemodis\ Display.otf);
+}
+@font-face {
+    font-family: texto;
+    src: url(../fonts/Now-Regular.otf);
+}
+
+/* 2.- Selector del wildcard si lo hay*/
+*{
+    box-sizing: border-box; /*Indica que el width de cada box será contando el borde hacia dentro*/
+}
+
+/*3.- Estructura del layout general*/
+body{
+    background-image: url(../img/backgroundpattern.png);
+    font-family: texto;
+    text-align: justify;
+    font-size: 1.2em;
+    
+}
+#wrapper {
+    background-color:#d0c3d8;
+    width: 80vw;
+    margin: auto;
+    padding:3%;
+    
+}
+h1,h2{
+    font-family: titulos;
+    text-align: center;
+    width: 80%;
+    background-color:white;
+    color:#7b2da8;
+    border-bottom: 2px solid;
+    border-right:  2px solid;
+    box-shadow: 
+    5px 5px 10px black, 
+    -5px 5px 10px gray,
+    5px -5px 10px gray,
+    -5px -5px 10px gray;
+    margin:auto;
+    padding:2px;
+    margin-bottom:20px;
+;
+}
+h1{
+    font-size:3em;
+    text-shadow:2px 2px 2px grey, /*efecto alo*/
+
+
+}
+h2{
+    font-size:2em;
+}
+
+blockquote{
+    border-left: 6px solid #7b2da8;
+    padding: 5px;
+    background-color: white;
+}
+
+#pulpo{
+    width: 55%;
+    display: block;
+    margin:auto;
+    border: 4px solid #7b2da8;
+    border-radius: 15%;
+}
+
+#pulpo2{
+    width: 25%;
+    float: right;
+    border: 4px solid #7b2da8;
+}
+
+dt{
+    font-weight: bold;
+}
+
+dl{
+    text-align: center;
+}
+
+#nutricional{
+    width: 35%;
+    float: right;
+    border: 4px solid #7b2da8;
+}
+/*4.- Section a section si las hubiera en detalle*/
