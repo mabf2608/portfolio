@@ -68,6 +68,7 @@ blockquote{
     border-left: 6px solid #7b2da8;
     padding: 5px;
     background-color: white;
+    text-align: justify;
 }
 
 #pulpo{
@@ -79,9 +80,11 @@ blockquote{
 }
 
 #pulpo2{
-    width: 25%;
+    width: 21%;
     float: right;
     border: 4px solid #7b2da8;
+    display: block;
+    margin:auto;
 }
 
 dt{
@@ -89,12 +92,74 @@ dt{
 }
 
 dl{
-    text-align: center;
+    text-align: left;
 }
 
 #nutricional{
-    width: 35%;
+    width: 32%;
     float: right;
     border: 4px solid #7b2da8;
 }
+
+@media only screen and (width >= 1920px) { /*corte para pantalla 2k*/
+    #pulpo2 {
+        width: 15.5%;
+        display: block;
+        margin:auto;
+    }
+
+    #nutricional{
+        width: 26%;
+        float: right;
+        border: 4px solid #7b2da8;
+    }
+}
+
+@media only screen and (width <= 900px) { /*corte para un tablet*/
+    #wrapper { width: 90%; }
+    #wrapper2 { width: 70%; }
+    h1, h2 { width: 100%; }
+    h1 { font-size: 1.6em; }
+    h2 { font-size: 1.6em; }
+    body {font-size: 1.4em;}
+
+    #pulpo{
+        width: 65%
+    }
+
+    #pulpo2 {
+        width: 30%;
+        margin:auto;
+    }
+
+    #nutricional{
+        width: 40%;
+        float: right;
+        border: 4px solid #7b2da8;
+    }
+}
+
+@media only screen and (width <= 600px) { /*corte para un móvil*/
+    h1 { font-size: 1.4em; }
+    h2 { font-size: 1.4em; }
+    h1, h2 { width: 60%; }
+    #wrapper { width: 100%; }
+    body {font-size: 1.2em;}
+
+    #pulpo{
+        width: 80%
+    }
+
+    #pulpo2 {
+        width: 30%;
+        margin:auto;
+    }
+
+    #nutricional{
+        width: 45%;
+        float: right;
+        border: 4px solid #7b2da8;
+    }
+}
+
 /*4.- Section a section si las hubiera en detalle*/
