@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/halloween.css">
+    <link rel="icon" href="./img/favicon.png">
+    <script src="./js/halloween.js"></script>
+    <title>Halloween</title>
+</head>
+<body>
+    <div id="scenario">
+        <div id="pumpking" onmouseover="show('bats');sound('batsound')" onmouseout="hide('bats');silence('batsound')">
+            <!--nothing at all-->
+        </div>
+        <img id="bats" src="./img/" alt="">
+        <audio id="batsound">
+            <source src="./sound/audio.mp3" type="audio/mp3">
+        </audio>
+
+        <div id="ghosts" onmouseover="show('werewolf')" onmouseout="hide('werewolf')">
+        
+        </div>
+        <img id="" src="./img/" alt="">
+    </div>
+</body>
+</html>

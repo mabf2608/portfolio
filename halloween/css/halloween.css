@@ -1,0 +1,61 @@
+/*
+
+
+
+
+
+
+
+
+
+
+*/
+body {
+    background-color: #090909;
+}
+#scenario{
+    background-image:url(../img/background.jpg);
+    width: 1600px;
+    height: 691px;
+    margin:auto;
+    position:relative;
+    top: 50px;
+}
+
+#pumpking {
+    width: 400px;
+    height:300px;
+
+    border:2px solid white;
+
+    position:absolute;
+    top:550px;
+    left:325px;
+}
+
+#bats {
+    position: absolute;
+    top: 500px;
+    left: 250px;
+    visibility: hidden;
+}
+
+#ghosts {
+    width: 100px;
+    height:200px;
+
+    border:2px solid white;
+
+    position:absolute;
+    top:475px;
+    left:400px;
+}
+
+#werewolf {
+    width: 300px;
+    height: 200pxx;
+    position: absolute;
+    top: 375px;
+    left: 100px;
+    visibility: hidden;
+}
