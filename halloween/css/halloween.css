@@ -1,61 +1,97 @@
-/*
-
-
-
-
-
-
-
-
-
-
-*/
+/*********************************************************************/
+/*                  Hoja de Estilo de halloween.html                 */
+/*                  autor: Miguel Ángel Bonilla Fernández            */
+/*                  version:1.0                                      */
+/*                  fecha: Noviembre 2023                            */
+/*                  comentario: ejercicio para portfolio             */
+/*********************************************************************/
 body {
     background-color: #090909;
 }
 #scenario{
     background-image:url(../img/background.jpg);
-    width: 1600px;
-    height: 691px;
+    width: 2790px;
+    height: 1080px;
     margin:auto;
     position:relative;
     top: 50px;
 }
 
-#pumpking {
-    width: 400px;
-    height:300px;
+#pan {
+    width: 130px;
+    height:525px;
+
+     border:2px solid white;
+
+    position:absolute;
+    top:250px;
+    left:2650px;
+}
+
+#bicycle {
+    width: 175px;
+    height:60px;
 
     border:2px solid white;
 
     position:absolute;
-    top:550px;
-    left:325px;
+    top:420px;
+    left:100px;
 }
 
-#bats {
+#carro {
+    width: 275px;
+    height: 200px;
     position: absolute;
-    top: 500px;
-    left: 250px;
-    visibility: hidden;
-}
-
-#ghosts {
-    width: 100px;
-    height:200px;
 
     border:2px solid white;
 
-    position:absolute;
-    top:475px;
-    left:400px;
+    top: 325px;
+    left: 400px;
 }
 
-#werewolf {
-    width: 300px;
-    height: 200pxx;
+#eyes {
+    width: 275px;
+    height: 200px;
     position: absolute;
-    top: 375px;
-    left: 100px;
+
+    border:2px solid white;
+
+    top: 325px;
+    left: 400px;
     visibility: hidden;
+}
+
+#textoinicial{
+    width: 750px;
+    height: 150px;
+    top: 1100px;
+    left: 1000px;
+    position: absolute;
+    border:2px solid white;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+@keyframes siniestro {
+    /*También se puede poner de 0% a 50% y luego al 100% de los segundos indicados en vez de from to*/
+    0%{
+        color:black;
+        font-size:2em;
+    }
+    50%{
+        color:white;
+        font-size:4em
+    }
+    100%{
+        color:black;
+        font-size:2em;
+    }
+}
+
+#textoinicial{
+    animation-name: siniestro;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }

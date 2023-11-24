@@ -14,9 +14,9 @@ function hide(element){
 }
 
 function sound(element){
-    document.getElementById('batsound').play();
+    document.getElementById(element).play();
 }
 
 function silence(element){
-    document.getElementById('batsound').pause();
+    document.getElementById(element).pause();
 }

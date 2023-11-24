@@ -10,18 +10,29 @@
 </head>
 <body>
     <div id="scenario">
-        <div id="pumpking" onmouseover="show('bats');sound('batsound')" onmouseout="hide('bats');silence('batsound')">
+        <img id="eyes" src="./img/eyes.gif" alt="">
+        <div id="pan" onmouseover="sound('pansound')" onmouseout="silence('pansound')">
             <!--nothing at all-->
         </div>
-        <img id="bats" src="./img/" alt="">
-        <audio id="batsound">
-            <source src="./sound/audio.mp3" type="audio/mp3">
+        <!--<img id="bats" src="./img/" alt="">-->
+        <audio id="pansound" preload>
+            <source src="./sound/pansound.mp3" type="audio/mp3">
         </audio>
-
-        <div id="ghosts" onmouseover="show('werewolf')" onmouseout="hide('werewolf')">
+        <div id="bicycle" onmouseover="sound('bicyclesound')" onmouseout="silence('bicyclesound')">
         
         </div>
-        <img id="" src="./img/" alt="">
+        <audio id="bicyclesound" preload>
+            <source src="./sound/bicyclesound.mp3" type="audio/mp3">
+        </audio>
+        <div id="carro" onmouseover="show('eyes')" onmouseout="hide('eyes')">
+        
+        </div>
+        <div id="textoinicial">
+            <p>
+                Ten cuidado con los objetos!
+            </p>
+        </div>
+        <!--<img id="" src="./img/" alt="">-->
     </div>
 </body>
 </html>
