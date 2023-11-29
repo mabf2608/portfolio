@@ -10,29 +10,78 @@
 </head>
 <body>
     <div id="scenario">
-        <img id="eyes" src="./img/eyes.gif" alt="">
-        <div id="pan" onmouseover="sound('pansound')" onmouseout="silence('pansound')">
-            <!--nothing at all-->
-        </div>
-        <!--<img id="bats" src="./img/" alt="">-->
+        <!--*********IMAGES*********-->
+        <img id="ennardjumpscare" src="./img/ennard.gif" alt="">
+        <img id="circusbabyjumpscare" src="./img/babycircus.gif" alt="">
+        <img id="puppetjumpscare" src="./img/puppet.gif" alt="">
+        <!--************************-->
+
+        <!--********AUDIO***********-->
         <audio id="pansound" preload>
             <source src="./sound/pansound.mp3" type="audio/mp3">
         </audio>
-        <div id="bicycle" onmouseover="sound('bicyclesound')" onmouseout="silence('bicyclesound')">
-        
-        </div>
         <audio id="bicyclesound" preload>
             <source src="./sound/bicyclesound.mp3" type="audio/mp3">
         </audio>
-        <div id="carro" onmouseover="show('eyes')" onmouseout="hide('eyes')">
-        
-        </div>
-        <div id="textoinicial">
+        <audio id="ennardsound" preload>
+            <source src="./sound/ennard.mp3" type="audio/mp3">
+        </audio>
+        <audio id="circusbabysound" preload>
+            <source src="./sound/circusbaby.mp3" type="audio/mp3">
+        </audio>
+        <audio id="puppetsound" preload>
+            <source src="./sound/puppet.mp3" type="audio/mp3">
+        </audio>
+        <!--************************-->
+
+        <!--********BOXES WITH THEIR RESPECTIVE ACTIONS********-->
+        <div id="pan" onclick="sound('pansound')" onmouseout="silence('pansound')"></div>
+        <div id="bicycle" onclick="sound('bicyclesound')" onmouseout="silence('bicyclesound')"></div>
+        <div id="carriage" onclick="show('ennardjumpscare');sound('ennardsound')" onmouseout="hide('ennardjumpscare');silence('ennardsound')"></div>
+        <div id="icecreamcurtain" onclick="show('circusbabyjumpscare');sound('circusbabysound')" onmouseout="hide('circusbabyjumpscare');silence('circusbabysound')"></div>
+        <div id="monkey" onclick="show('puppetjumpscare');sound('puppetsound')" onmouseout="hide('puppetjumpscare');silence('puppetsound')"></div>
+        <!--***************************************************-->
+
+        <!--********BOXES WITH TEXT*********-->
+        <div id="initialtext" onclick="hide('initialtext');show('kid1');show('kid2');show('kid3');show('kid4');show('kid5')"> <!--This is the initial text-->
             <p>
-                Ten cuidado con los objetos!
+                Click here when you are ready to start
             </p>
         </div>
-        <!--<img id="" src="./img/" alt="">-->
+        <div id="kid1" class="kid"> <!--Part of the full dialogue of the kid-->
+            <p>
+                Where am I? The last thing I remember is that I went to the circus with my parents...
+            </p>
+        </div>
+        <div id="kid2" class="kid"> <!--Part of the full dialogue of the kid-->
+            <p>
+                *You read in a local newspaper that this circus was closed 3 months ago due to the 
+                <br>
+                disappearance of several children*
+            </p>
+        </div>
+        <div id="kid3" class="kid"> <!--Part of the full dialogue of the kid-->
+            <p>
+                *You remember that the animatronics that were in the circus that day moved in a... 
+                <br>
+                STRANGE WAY*
+            </p>
+        </div>
+        <div id="kid4" class="kid"> <!--Part of the full dialogue of the kid-->
+            <p>
+                I should not make noise, I have to avoid the bicycle handlebars and the frying pan
+                <br>
+                at all costs...
+            </p>
+        </div>
+        <div id="kid5" class="kid"> <!--Part of the full dialogue of the kid-->
+            <p>
+                Where should I hide? Behind the ice cream curtain, on the back of the monkey or
+                <br>
+                inside the carriage next to the bike...
+            </p>
+        </div>
+        <!--*************************-->
     </div>
 </body>
 </html>
